@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>🍔 Buyurtma berish</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="title">🍔 Patir & FastFood</div>
+    </div>
+
+    <form id="orderForm">
+      <!-- Name -->
+      <div class="form-row">
+        <label>👤 Ismingiz</label>
+        <input type="text" id="name" placeholder="Ismingizni kiriting" required>
+      </div>
+
+      <!-- Phone -->
+      <div class="form-row">
+        <label>📱 Telefon raqamingiz</label>
+        <input type="tel" id="phone" placeholder="+998 90 123 45 67" required>
+      </div>
+
+      <!-- Foods -->
+      <div class="form-row">
+        <label>🍽 Taomlar</label>
+        <div class="food-list">
+          <label class="food-item"><input type="checkbox" value="Patir Lavash"> Patir Lavash</label>
+          <label class="food-item"><input type="checkbox" value="Burger"> Burger</label>
+          <label class="food-item"><input type="checkbox" value="Shaurma"> Shaurma</label>
+          <label class="food-item"><input type="checkbox" value="Gazli suv"> Gazli suv</label>
+          <label class="food-item"><input type="checkbox" value="Gazsiz suv"> Gazsiz suv</label>
+        </div>
+      </div>
+
+      <!-- Location -->
+      <div class="form-row">
+        <label>📍 Manzilingiz</label>
+        <div class="loc-row">
+          <input type="text" id="location" placeholder="Manzilni kiriting" required>
+          <button type="button" class="loc-btn" id="locBtn">📍 Joylashuv</button>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <div class="form-row">
+        <button type="submit" class="btn-primary">✅ Buyurtma berish</button>
+      </div>
+    </form>
+
+    <!-- Summary -->
+    <div class="summary" id="summaryBox">
+      📝 Buyurtma ma'lumotlari bu yerda chiqadi
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
